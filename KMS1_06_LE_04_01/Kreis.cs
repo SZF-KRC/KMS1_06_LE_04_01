@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace KMS1_06_LE_04_01
 {
-    internal class Kreis : GeometrischeFigur
+    public class Kreis : GeometrischeFigur
     {
-        public override void CalculateArea()
+        public override double CalculateArea()
         {
-            base.CalculateArea();
+            throw new NotImplementedException();
         }
 
-        public override void CalculatePerimeter()
+        public override double CalculatePerimeter()
         {
-            base.CalculatePerimeter();
+            throw new NotImplementedException();
         }
     }
 }

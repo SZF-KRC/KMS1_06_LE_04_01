@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace KMS1_06_LE_04_01
 {
-    internal class Dreieck : GeometrischeFigur
+    public class Dreieck : GeometrischeFigur
     {
+        public override double CalculatePerimeter()
+        {
+            throw new NotImplementedException();
+        }
+        public override double CalculateArea()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

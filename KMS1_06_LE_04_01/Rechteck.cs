@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace KMS1_06_LE_04_01
 {
-    internal class Rechteck : GeometrischeFigur
+    public class Rechteck : GeometrischeFigur
     {
+        public override double CalculateArea()
+        {
+            throw new NotImplementedException();
+        }
+        public override double CalculatePerimeter()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

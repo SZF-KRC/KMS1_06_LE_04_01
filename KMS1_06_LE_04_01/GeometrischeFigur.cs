@@ -6,17 +6,20 @@ using System.Threading.Tasks;
 
 namespace KMS1_06_LE_04_01
 {
-    public class GeometrischeFigur
+    public abstract class GeometrischeFigur
     {
-        public string Color { get; set; }
-        public virtual void CalculateArea()
-        {
-            Console.WriteLine("Tu bude kod");
-        }
+        public double Radius { get; set; }
+        public double SeitenA { get; set; }
+        public double SeitenB { get; set; }
 
-        public virtual void CalculatePerimeter() 
-        {
-            Console.WriteLine("tu bude kod");
-        }
+        public double SeitenC { get; set; }
+        public string Color { get; set; }
+
+
+        public abstract double CalculateArea();
+
+
+        public abstract double CalculatePerimeter(); 
+        
     }
 }
