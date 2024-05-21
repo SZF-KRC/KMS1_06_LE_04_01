@@ -6,16 +6,22 @@ using System.Threading.Tasks;
 
 namespace KMS1_06_LE_04_01
 {
+    /// <summary>
+    /// Repräsentiert einen Kreis als geometrische Figur.
+    /// </summary>
     public class Kreis : GeometrischeFigur
     {
-        public override double CalculateArea()
-        {
-            throw new NotImplementedException();
-        }
+        /// <summary>
+        /// Berechnet die Fläche des Kreises.
+        /// </summary>
+        /// <returns>Die Fläche des Kreises.</returns>
+        public override double BerechneFlaeche() => Pi * (Radius * Radius);// Lambda-Ausdruck zur Berechnung der Fläche des Kreises, ich hätte return verwenden können, aber ich kürze den Code
 
-        public override double CalculatePerimeter()
-        {
-            throw new NotImplementedException();
-        }
+        /// <summary>
+        /// Berechnet den Umfang des Kreises.
+        /// </summary>
+        /// <returns>Der Umfang des Kreises.</returns>
+        public override double BerechneUmfang() => 2*Pi*Radius;// Lambda-Ausdruck zur Berechnung des Umfangs des Kreises, ich hätte return verwenden können, aber ich kürze den Code
+
     }
 }
